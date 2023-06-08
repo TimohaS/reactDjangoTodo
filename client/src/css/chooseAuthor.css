@@ -1,0 +1,50 @@
+h2 {
+    color: white;
+}
+
+.author_items{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.author_items h2{
+    font-size: 18px;
+}
+
+
+.item_choose {
+    padding: 5px;
+    border: 2px solid white;
+    margin-bottom: 10px;        
+    transition-duration: 185ms;
+    position: relative;
+    margin-left: 20px;
+}
+
+.item_choose:hover {
+    border-color: rgb(89, 90, 87);    
+}
+
+.item_choose .name, .item_choose .position{
+    margin: 5px;
+    
+}
+
+.item_choose .name p{
+    margin: 2px;
+    color: white;
+}
+
+.item_choose .position{
+    color: white;
+}
+
+.del_cursor {cursor: pointer; position: absolute; top: 5px; right: 15px;}
+.del_cursor:before, .del_cursor:after {content: ""; position: absolute; width: 14px; height: 4px; background: gray;}
+.del_cursor:before {transform: rotate(45deg);}
+.del_cursor:after {transform: rotate(-45deg);}
+
+.del_cursor:hover:before, .del_cursor:hover:after {content: ""; position: absolute; width: 14px; height: 4px; background: rgb(255, 0, 0);}
+.del_cursor:hover:before {transform: rotate(45deg);}
+.del_cursor:hover:after {transform: rotate(-45deg);}

@@ -1,0 +1,17 @@
+import React from "react";
+import Item from "./Item";
+
+export class Items extends React.Component {
+  render() {
+    return (
+      <main>
+        {this.props.items.map((el) => (
+          <Item key={el.id} item={el} token={this.props.token} />
+          
+        ))}
+      </main>
+    );
+  }
+}
+
+export default Items;
